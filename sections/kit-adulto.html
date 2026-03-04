@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>LL Pegue Monte - Adulto</title>
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #5a2f4a;
+            min-height: 100vh;
+            color: white;
+        }
+
+        /* BOTÃO FALE CONOSCO (TOPO) */
+        .top-contact {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+
+        /* CONTAINER PRINCIPAL */
+        .portfolio-container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 40px;
+        }
+
+        /* TÍTULO */
+        .main-title {
+            font-size: 56px;
+            font-weight: 700;
+            color: #d4912c;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+        }
+
+        /* SUBTÍTULO */
+        .subtitle {
+            font-size: 18px;
+            font-weight: 300;
+            opacity: 0.85;
+            margin-bottom: 80px;
+        }
+
+        /* SEÇÃO DE BOTÕES */
+        .kits-section {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        /* BOTÕES (PADRÃO) */
+        .kit-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+
+            background-color: transparent;
+            border: 2px solid #d4912c;
+            color: #d4912c;
+            padding: 22px 50px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 500;
+            text-decoration: none;
+
+            transition: 
+                transform 0.25s ease,
+                box-shadow 0.25s ease,
+                background-color 0.25s ease,
+                color 0.25s ease;
+        }
+
+        .kit-button:hover {
+            background-color: #d4912c;
+            color: #5a2f4a;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 600px) {
+            .main-title {
+                font-size: 40px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+            }
+
+            .kits-section {
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- BOTÃO FALE CONOSCO -->
+<div class="top-contact">
+    <a 
+        href="https://wa.me/5511999999999" 
+        target="_blank" 
+        class="kit-button"
+    >
+        FALE CONOSCO
+    </a>
+</div>
+
+<!-- CONTEÚDO PRINCIPAL -->
+<div class="portfolio-container">
+    <div>
+        <h1 class="main-title">KIT ADULTO</h1>
+
+        <p class="subtitle">
+            Escolha a opção ideal para cada estilo
+        </p>
+
+        <div class="kits-section">
+            <a href="adulto-masculino.html" class="kit-button">
+                MASCULINO
+            </a>
+
+            <a href="adulto-feminino.html" class="kit-button">
+                FEMININO
+            </a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

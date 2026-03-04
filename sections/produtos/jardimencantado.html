@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>LL Pegue Monte - Jardim Encantado</title>
+        <link rel="icon" href="icon.png" type="image/png">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #5a2f4a;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        h1 {
+            color: #d4912c;
+            margin: 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            padding: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .photo-card {
+            background-color: rgba(255, 255, 255, 0.06);
+            padding: 15px;
+            border-radius: 22px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .photo-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+        }
+
+        .caption {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+            opacity: 0.85;
+        }
+
+        .info {
+            text-align: center;
+            padding: 15px;
+            font-size: 13px;
+            opacity: 0.75;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Jardim Encantado</h1>
+</header>
+
+<section class="gallery">
+
+    <!-- IMAGEM 1 -->
+    <div class="photo-card">
+        <img src="../../images/produtos/fotojardimencantado1.png" alt="Kit Foto 1">
+        <div class="caption">Imagem 1</div>
+    </div>
+
+    <!-- IMAGEM 2 -->
+    <div class="photo-card">
+        <img src="../../images/produtos/fotojardimencantado2.png" alt="Kit Foto 2">
+        <div class="caption">Imagem 2</div>
+    </div>
+
+    <!-- IMAGEM 3 -->
+    <div class="photo-card">
+        <img src="../../images/produtos/fotojardimencantado3.png" alt="Kit Foto 3">
+        <div class="caption">Imagem 3</div>
+    </div>
+
+    <!-- IMAGEM 4 -->
+    <div class="photo-card">
+        <img src="../../images/produtos/fotojardimencantado4.png" alt="Kit Foto 4">
+        <div class="caption">Imagem 4</div>
+    </div>
+
+    <!-- IMAGEM 5 -->
+    <div class="photo-card">
+        <img src="../../images/produtos/foto5.jpg" alt="Kit Foto 5">
+        <div class="caption">Imagem 5</div>
+    </div>
+
+</section>
+
+<div class="info">
+    Para adicionar mais imagens, basta duplicar um bloco <strong>photo-card</strong><br>
+    e trocar o nome do arquivo dentro da pasta <strong>/images/produtos</strong>.
+</div>
+
+</body>
+</html>
